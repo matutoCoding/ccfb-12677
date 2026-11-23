@@ -1,0 +1,22 @@
+{
+  "name": "tour-light-design",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "浏览器本地灯光设计与巡演适配系统 (TypeScript + WebGL2, 离线运行)",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "serve": "node tools/serve.mjs dist",
+    "test": "node --experimental-strip-types --test tests/*.test.ts"
+  },
+  "dependencies": {
+    "fflate": "^0.8.2"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.3",
+    "vite": "^5.4.11",
+    "vite-plugin-singlefile": "^2.0.3"
+  }
+}
